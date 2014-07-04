@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MDSlideNavigationViewController.h"
+#import "HomeTabController.h"
+#import "Globle.h"
+#import "HomeTabController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+/**
+ *  主模块容器
+ */
+@property(nonatomic,strong)HomeTabController * hometabController;
 
+@property(nonatomic,strong)AppDelegate * delegate;
++(AppDelegate*)shareAppDelegate;
 @end

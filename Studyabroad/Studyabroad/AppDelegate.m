@@ -9,10 +9,31 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+static AppDelegate *app;
+@synthesize hometabController;
+@synthesize delegate;
 
++(AppDelegate*)shareAppDelegate
+{
+    return app;
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGRect appBound = [[UIScreen mainScreen] applicationFrame];
+    [Globle shareInstance].globleWidth = screenRect.size.width; //屏幕宽度
+    [Globle shareInstance].globleHeight = appBound.size.height;  //屏幕高度（无顶栏）
+    [Globle shareInstance].globleAllHeight = screenRect.size.height;  //屏幕高度（有顶栏）
+    [AppConfig shareInstance];
+ 
+    //初始化
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    app =self;
+    hometabController=[[HomeTabController alloc] init];
+    self.window.rootViewController = hometabController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
