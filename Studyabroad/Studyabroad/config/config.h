@@ -22,7 +22,7 @@ static int const QQ_LOGIN_SUCCESSFUL =1;
 static NSString *const SEVER_API_Test = @"http://192.168.100.168/gc.qq.appgame.com";
 
 // 应用名称，用于如首页等显眼位置：
-static NSString *const APP_NAME_FOR_FIRST_PAGE = @"腾讯特权中心";
+static NSString *const APP_NAME_FOR_FIRST_PAGE = @"斑马留学";
 
 /// AppStore上的应用ID：
 static NSUInteger const APP_STORE_ID = 862971186;

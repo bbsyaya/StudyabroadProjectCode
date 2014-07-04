@@ -44,12 +44,19 @@
     [super viewDidAppear:animated];
 }
 
-
-
--(void)viewWillAppear:(BOOL)animated{
-
-    [super viewWillAppear:animated];
+- (void)viewWillAppear:(BOOL)animated {
+    
+    //self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    //[self.navigationController.navigationBar setTranslucent:NO];
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 4.9) {
+        //IOS5
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"顶部导航栏.png"] forBarMetrics:UIBarMetricsDefault];
+        //self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+        self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
+    }
 }
+
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
@@ -217,7 +224,7 @@
 {
     NSLog(@"Selected Tab Index: %d", itemIndex);
     self.selectedIndex=itemIndex;
-    //self.navigationItem.title=tabitemTitles[itemIndex];
+    self.navigationItem.title=tabitemTitles[itemIndex];
     
     if (itemIndex==3) {
 
@@ -233,8 +240,8 @@
  */
 -(void)tableViewdidSelectTabAtIndex:(int)Index{
     self.selectedIndex=Index;
-//    JMTabItem * item=[tabView.tabContainer.tabItems objectAtIndex:Index];
-//    [item itemTapped];
+    JMTabItem * item=[tabView.tabContainer.tabItems objectAtIndex:Index];
+    [item itemTapped];
 
 }
 

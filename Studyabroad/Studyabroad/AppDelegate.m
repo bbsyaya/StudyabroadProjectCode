@@ -32,7 +32,7 @@ static AppDelegate *app;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     app =self;
     hometabController=[[HomeTabController alloc] init];
-    self.window.rootViewController = hometabController;
+     self.window.rootViewController = [[MDSlideNavigationViewController alloc]initWithRootViewController:hometabController];
     [self.window makeKeyAndVisible];
     return YES;
 }
