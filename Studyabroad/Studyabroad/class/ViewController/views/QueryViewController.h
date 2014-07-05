@@ -7,9 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "QueryConllectionCell.h"
 /**
  *  申请查询
  */
-@interface QueryViewController : BaseViewController
+@interface QueryViewController : BaseViewController{
+
+}
+
 
 @end

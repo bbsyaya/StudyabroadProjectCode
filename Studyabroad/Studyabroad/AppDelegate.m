@@ -26,7 +26,6 @@ static AppDelegate *app;
     [Globle shareInstance].globleHeight = appBound.size.height;  //屏幕高度（无顶栏）
     [Globle shareInstance].globleAllHeight = screenRect.size.height;  //屏幕高度（有顶栏）
     [AppConfig shareInstance];
- 
     //初始化
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
