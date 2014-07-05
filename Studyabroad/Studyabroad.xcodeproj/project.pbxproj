@@ -10,6 +10,8 @@
 		04A5748D1967F08E00C43416 /* QueryConllectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5748B1967F08E00C43416 /* QueryConllectionCell.m */; };
 		04A5748E1967F08E00C43416 /* QueryConllectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A5748C1967F08E00C43416 /* QueryConllectionCell.xib */; };
 		04A574911967F15300C43416 /* ServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A574901967F15300C43416 /* ServerInterface.m */; };
+		04A574961967F6A000C43416 /* QueryConllectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A574941967F6A000C43416 /* QueryConllectionCell.m */; };
+		04A574971967F6A000C43416 /* QueryConllectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A574951967F6A000C43416 /* QueryConllectionCell.xib */; };
 		E3723558196515AC00670771 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3723557196515AC00670771 /* Foundation.framework */; };
 		E372355A196515AC00670771 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3723559196515AC00670771 /* CoreGraphics.framework */; };
 		E372355C196515AC00670771 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E372355B196515AC00670771 /* UIKit.framework */; };
@@ -154,6 +156,9 @@
 		04A5748C1967F08E00C43416 /* QueryConllectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QueryConllectionCell.xib; sourceTree = "<group>"; };
 		04A5748F1967F15300C43416 /* ServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInterface.h; sourceTree = "<group>"; };
 		04A574901967F15300C43416 /* ServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerInterface.m; sourceTree = "<group>"; };
+		04A574931967F6A000C43416 /* QueryConllectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryConllectionCell.h; sourceTree = "<group>"; };
+		04A574941967F6A000C43416 /* QueryConllectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryConllectionCell.m; sourceTree = "<group>"; };
+		04A574951967F6A000C43416 /* QueryConllectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QueryConllectionCell.xib; sourceTree = "<group>"; };
 		E3723554196515AC00670771 /* Studyabroad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studyabroad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3723557196515AC00670771 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E3723559196515AC00670771 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -401,6 +406,16 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		04A574921967F6A000C43416 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				04A574931967F6A000C43416 /* QueryConllectionCell.h */,
+				04A574941967F6A000C43416 /* QueryConllectionCell.m */,
+				04A574951967F6A000C43416 /* QueryConllectionCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		E372354B196515AC00670771 = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +525,7 @@
 		E372358D1965620500670771 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				04A574921967F6A000C43416 /* cell */,
 				04A574891967F08E00C43416 /* cell */,
 				E372358F1965624E00670771 /* views */,
 				E372358E1965622000670771 /* homeviews */,
@@ -1012,6 +1028,7 @@
 				E37236CB1966650100670771 /* pageDot@2x.png in Resources */,
 				E37236021965699B00670771 /* 顶部导航栏.png in Resources */,
 				E372369719665D9F00670771 /* alertView_button_green@2x.png in Resources */,
+				04A574971967F6A000C43416 /* QueryConllectionCell.xib in Resources */,
 				E37236AE19665DEB00670771 /* 10-引导页小点-粉色@2x.png in Resources */,
 				E37236B019665DEB00670771 /* 10-引导页小点-蓝色@2x.png in Resources */,
 				E37236031965699B00670771 /* 顶部导航栏@2x.png in Resources */,
@@ -1043,6 +1060,7 @@
 				E372363A19665CB900670771 /* AFURLConnectionOperation.m in Sources */,
 				E372356E196515AC00670771 /* ViewController.m in Sources */,
 				E37235D5196566CC00670771 /* MDSlideNavigationViewController.m in Sources */,
+				04A574961967F6A000C43416 /* QueryConllectionCell.m in Sources */,
 				E372360E19665C0E00670771 /* UserData.m in Sources */,
 				E372363F19665CB900670771 /* iVersion.m in Sources */,
 				E372366619665CE600670771 /* UIView+InnerShadow.m in Sources */,

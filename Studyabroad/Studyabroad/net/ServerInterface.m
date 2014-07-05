@@ -197,7 +197,6 @@
         params=[[NSDictionary alloc]init];
     }
     NSMutableDictionary *finalParams = [params mutableCopy];
-
     NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
     [finalParams setObject:[self createSignStringWithTimpstamp:timestamp] forKey:@"sign"];
     [finalParams setObject:[NSString stringWithFormat:@"%.0f", timestamp] forKey:@"time"];
